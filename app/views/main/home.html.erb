@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- 
+TEMPLATE NAME : Adminre frontend
+VERSION : 1.2.0
+AUTHOR : JohnPozy
+AUTHOR URL : http://themeforest.net/user/JohnPozy
+EMAIL : pampersdry@gmail.com
+LAST UPDATE: 23/06/2014
+
+** A license must be purchased in order to legally use this template for your project **
+** PLEASE SUPPORT ME. YOUR SUPPORT ENSURE THE CONTINUITY OF THIS PROJECT **
+-->
+<html class="frontend">
+    <!-- START Head -->
+    <%= render 'shared/frontend_head' %>
+    <!--/ END Head -->
+
+    <!-- START Body -->
+    <body>
+
+        <%= render 'shared/header_member' %>
+
+        <!-- START Template Main -->
+        <section id="main" role="main">
+            <!-- START jumbotron -->
+            <section class="jumbotron jumbotron-bg7 nm" data-stellar-background-ratio="0.4" style="min-height:970px;">
+                <!-- pattern + overlay -->
+                <div class="overlay pattern pattern2"></div>
+                <!--/ pattern + overlay -->
+                <div class="container" style="padding-top:8%;">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h1 class="thin text-white mt0 mb5">Stay Connected.</h1>
+                            <div class="row clearfix">
+                                <div class="col-md-9">
+                                    <p class="text-white mb15 fsize14">
+                                    We are dedicated to connecting, supporting, and empowering black professionals that have achieved the CFA designation and those pursuing the CFA course of study.
+                                    </p>
+                                    <br/>
+                                    <div class="col-md-12 row">
+                                        <a class="btn btn-default btn-outline text-white btn-lg">Invite a Black CFA</a>
+                                        <a class="btn btn-default btn-outline text-white btn-lg ml10">Tell us what you think</a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/blackcfanetwork" data-widget-id="488216503414558720">Tweets by @blackcfanetwork</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/ END jumbotron -->
+
+            <a href="#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
+            <!--/ END To Top Scroller -->
+        </section>
+        <!--/ END Template Main -->
+
+        <!-- START Template Footer -->
+        <footer id="footer" role="contentinfo" style="border-top: 10px solid #222; border:">
+            <!-- pattern + overlay -->
+            <!-- <div class="overlay pattern pattern0"></div> -->
+            <!--/ pattern + overlay -->
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row pb60 pt40">
+                    <!-- About -->
+                    <div class="col-md-8">
+                    </div>
+                    <!--/ About -->
+                    <div class="col-md-4">
+                        <h4 class="font-alt mt0">Join our Mailing List</h4>
+                        <form role="form">
+                            <div class="form-group">
+                                <p class="form-control-static">Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="newsletter_email" placeholder="Enter email">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Subscribe Now</button>
+                        </form>
+                    </div>
+                    <!--/ Newsletter -->
+                </div>
+                <!--/ row -->
+            </div>
+            <!--/ container -->
+
+            <!-- bottom footer -->
+            <div class="footer-bottom" style="position: absolute; bottom: 0; background: #222; padding: 30px 20px 20px; z-index: 99999; border: 1px solid #333;">
+                <!-- copyright -->
+               <div class="container" style="border-top: 5px solid #444; border-bottom: 1px solid #333; padding-top: 15px;">
+                    <div class="row">
+                        <div class="col-sm-8 gf_montserrat thin">
+                             <h5 class="text-muted thin gf_muli mt5 mb5">
+                                <span class="ico-share22 mr10 text-success"></span>
+                                <span class="mr5">Like Us.</span> 
+                                <span class="mr5">Share Us.<span class="mr5">
+                                Follow Us.
+                            </h5>
+                             <ul class="inline-li social_64 ml0 pl0 mt15">
+                                <li><img src="image/social/youtube_circle-128.png"/></li>
+                                <li><img src="image/social/twitter_circle-128.png"/></li>
+                                <li><img src="image/social/slideshare_circle-128.png"/></li>
+                                <li><img src="image/social/linkedin_circle-128.png"/></li>
+                                <li><img src="image/social/instagram_circle-128.png"/></li>
+                                <li><img src="image/social/facebook_circle-128.png"/></li>
+                            </ul>
+                            <!--/ copyright -->
+                        </div>
+                         <div class="col-sm-4 gf_montserrat text-right">
+                            <p class="text-muted bold mb5">BLACKCFA</p>
+                            <!-- copyright -->
+                            <ul class="unstyled gf_muli">
+                                <li>Our Team</li>
+                                <li>Partnerships</li>
+                                <li>Contact Us</li>
+                                <li>Terms and Policies</li>
+                            </ul>
+                            <!--/ copyright -->
+                        </div>
+                    </div>
+                </div>
+                <!--/ container -->
+            </div>
+            <!--/ bottom footer -->
+        </footer>
+        <!--/ END Template Footer -->
+
+        <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- Library script : mandatory -->
+        <script type="text/javascript" src="/library/jquery/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/library/jquery/js/jquery-migrate.min.js"></script>
+        <script type="text/javascript" src="/library/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/library/core/js/core.min.js"></script>
+        <!--/ Library script -->
+
+        <!-- App and page level script -->
+        <script type="text/javascript" src="/plugins/sparkline/js/jquery.sparkline.min.js"></script><!-- will be use globaly as a summary on sidebar menu -->
+        <script type="text/javascript" src="/javascript/app.min.js"></script>
+        
+        
+        <script type="text/javascript" src="/plugins/owl/js/owl.carousel.min.js"></script>
+        
+        <script type="text/javascript" src="/javascript/pages/frontend/home.js"></script>
+        
+        <!--/ App and page level scrip -->
+        <!--/ END JAVASCRIPT SECTION -->
+    </body>
+    <!--/ END Body -->
+</html>

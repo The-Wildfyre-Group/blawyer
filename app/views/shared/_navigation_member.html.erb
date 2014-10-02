@@ -1,0 +1,99 @@
+<div class="collapse navbar-collapse navbar-collapse-alt" id="navbar-collapse">
+    <ul class="nav navbar-nav navbar-right">
+        <!-- <li class="dropdown">
+            <a href="#">
+                <span class="meta">
+                    <span class="text">
+                         <span class="ico-building"></span>
+                         Companies
+                     </span>
+                </span>
+            </a>
+        </li> -->
+        <li class="dropdown">
+            <a href="<%= charterholders_path %>">
+                <span class="meta">
+                    <span class="text">
+                        <span class="ico-certificate2"></span>
+                        Charterholders
+                    </span>
+                </span>
+            </a>
+        </li>
+        <li class="dropdown">
+            <a href="<%= users_path %>">
+                <span class="meta">
+                    <span class="text">
+                        <span class="ico-users"></span>
+                        Member Directory
+                    </span>
+                </span>
+            </a>
+        </li>
+		<% if Forum.count == 1 %>
+        <li class="dropdown">
+            <a href="/forums/<%= "#{Forum.last.id}"%>">
+                <span class="meta">
+                    <span class="text">
+                        <span class="ico-bubble3"></span>
+                        Forum
+                    </span>
+                </span>
+            </a>
+        </li>
+		
+		<% else %>
+		
+        <li class="dropdown">
+            <a href="/forums">
+                <span class="meta">
+                    <span class="text">
+                        <span class="ico-bubble3"></span>
+                        Forums
+                    </span>
+                </span>
+            </a>
+        </li>
+		
+		<% end %>
+		
+        <li class="dropdown">
+             <a href="#">
+            </a>
+        </li>
+        <!-- Profile dropdown -->
+        <li class="dropdown profile bgcolor-black">
+            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="meta">
+                    <span class="avatar">
+                        <img src="<%= @user.avatar %>" class="img-circle" height="30" alt="" />
+                    </span>
+                    <span class="text hidden-xs hidden-sm ml10"><%= @user.first_name %></span>
+                    <span class="caret"></span>
+                </span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li class="pa15">
+                    <h5 class="semibold hidden-xs hidden-sm">
+                        <p class="nm">Follow Us!</p>
+                        <small class="text-muted">Stay connected @blackcfa.</small>
+                    </h5>
+                    <br>
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_native_toolbox"></div>
+                </li>
+                <li class="divider"></li>
+                <li><a href="<%= users_path %>"><span class="icon"><i class="ico-user-plus2"></i></span> BlackCFA Directory</a></li>
+                <li><a href="<%= user_path(@user) %>"><span class="icon"><i class="ico-user"></i></span> My Profile</a></li>
+                <li><a href="<%= edit_user_path(@user) %>"><span class="icon"><i class="ico-cog4"></i></span> Edit Profile</a></li>
+                <li class="divider"></li>
+                <li>
+                    <%= link_to session_path(current_user.id), method: :delete do %>
+                        <span class="icon"><i class="ico-exit"></i></span> Log Out
+                    <% end %>
+                </li>
+                
+            </ul>
+        </li>
+        <!-- Profile dropdown -->
+    </ul>

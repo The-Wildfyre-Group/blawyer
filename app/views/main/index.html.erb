@@ -1,14 +1,1903 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>BlackLawyer</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<!-- 
+TEMPLATE NAME : Adminre frontend
+VERSION : 1.2.0
+AUTHOR : JohnPozy
+AUTHOR URL : http://themeforest.net/user/JohnPozy
+EMAIL : pampersdry@gmail.com
+LAST UPDATE: 23/06/2014
 
-<%= yield %>
+** A license must be purchased in order to legally use this template for your project **
+** PLEASE SUPPORT ME. YOUR SUPPORT ENSURE THE CONTINUITY OF THIS PROJECT **
+-->
+<html class="frontend">
+    <!-- START Head -->
+    <%= render 'shared/frontend_head' %>
+    <!--/ END Head -->
 
-</body>
+    <!-- START Body -->
+    <body>
+
+        <%= render 'shared/header_visitor' %>
+
+        <!-- START Template Main -->
+        <section id="main" role="main">
+            
+            <!-- START jumbotron -->
+            <section class="jumbotron jumbotron-bg7 nm" data-stellar-background-ratio="0.4" style="min-height: 960px;">
+                <!-- pattern + overlay -->
+                <div class="overlay pattern pattern5"></div>
+                <!--/ pattern + overlay -->
+                <div class="container" style="padding-top:30%;">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="center">
+                                <img class="img-circle mb5 mr10 ml5 pull-left mt10" src="/image/logo/cfa-logo-inverse.jpg" alt="" style="height: 150px; width: 150px; opacity: .5">
+                            </div>
+                            <h1 class="text-center mb10 mt20 text-white gf_droid">Connecting our community, <u>everywhere</u>.</h1>
+                            <h4 class="mute text-center mb40 mt0 text-muted gf_droid">
+                                The <u>most respected</u> community in investment finance.
+                            </h4>
+                            <div class="clearfix"></div>
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                <div class="row">
+                                    <div class="col-md-6">
+										<%= link_to signup_path do %>
+                                        <button class="btn btn-lg btn-primary btn-block" style="padding: 20px 15px; border-radius: 2px;">Sign Up</button>
+										<% end %>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#learn-more" class="btn btn-lg btn-transparent btn-block col-md-6" style="padding: 20px 15px; border-radius: 2px;">Learn More</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <p class="text-muted text-center mb20 mt20 text-white">
+                                Interested in Partnering --  <a href="#"><u>Connect with our team</u></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/ END jumbotron -->
+
+            <!-- START Call To Action Section -->
+            <section class="section bgcolor-primary cta_bs " style="border-top: 10px solid #f5f5f5; border-bottom: 10px solid #f5f5f5; position: relative; padding: 20px 0;">
+                <div class="overlay light pattern pattern10 transparent"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                             <div class="col-md-2 text-right">
+                                <img src="../image/icons/mission_icon.png" height="120"/>
+                            </div>
+                            <div class="col-md-5 text-center">
+                                <h4 class="gf_lato lh-24 mt10" style="color: #00617c; text-shadow: 0px 1px 1px #16ceff; font-weight: 300; font-size: 24px; word-spacing: 5px;">
+                                    A VERY SIMPLE<br/>
+                                    <span style="font-size: 90px; line-height: 75px; ">
+                                        MISSION
+                                    </span>
+                                </h4>
+                            </div>
+                            <div class="col-md-5">
+                                <blockquote class="nm np" style="border-left: 2px solid #0089b0;">
+                                    <!-- <h5 class="gf_lato" style="color: #00617c; text-shadow: 0px 1px 1px #16ceff; font-weight: 400; word-spacing: 1px;">
+                                    Connecting Our Community
+                                    </h5> -->
+                                    <h4 class="gf_merriweather nm" style="border-left: 2px solid #30d2ff; color: #e3f9ff; line-height: 30px; padding: 5px 0 0 40px;">
+                                    To connect and empower professionals that have achieved the CFA designation and those pursuing the CFA course of study.
+                                    </h4>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- END Call To Action Section -->
+
+            <!-- START Blog Content -->
+            <section id="" class="section bgcolor-white np" style="border-top: 10px solid #f5f5f5; border-bottom: 10px solid #f5f5f5;">
+                <div class="container-fluid">
+                   <!-- START Row -->
+                    <div class="row" id="masonry">
+                        
+                        <!-- Blog post #1 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    PORTFOLIO MANAGEMENT
+                                                </h6> 
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb1.jpg" data-src="../image/thumb/industry/thumb1.jpg" alt="Photo" height="90px">
+                                        <!-- Content -->
+                                        
+                                    </div>
+                                    <!--/ media -->
+                                    
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #1 -->
+
+                        <!-- Blog post #10 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    FOREIGN CURRENCY
+                                                </h6> 
+                                                <h5 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h5>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb2.jpg" data-src="../image/thumb/industry/thumb2.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #10 -->
+
+
+                        <!-- Blog post #3 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    RISK MANAGEMENT
+                                                </h6> 
+                                                <h5 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h5>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb3.jpg" data-src="../image/thumb/industry/thumb3.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #3 -->
+
+                        <!-- Blog post #4 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    CAPITAL MARKETS
+                                                </h6> 
+                                                <h5 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h5>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb4.jpg" data-src=".../image/thumb/industry/thumb4.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #4 -->
+
+                        <!-- Blog post #5 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25 mb0">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5 mb0">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb5.jpg" data-src=".../image/thumb/industry/thumb5.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #5 -->
+
+                        <!-- Blog post #6 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span> 
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    How long does the CFA take to complete?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb6.jpg" data-src=".../image/thumb/industry/thumb6.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #6 -->
+
+
+                        <!-- Blog post #7 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb7.jpg" data-src=".../image/thumb/industry/thumb7.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+                            </article>
+                        </div>
+                        <!--/ Blog post #7 -->
+                        
+
+                         <!-- Blog post #8 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb8.jpg" data-src=".../image/thumb/industry/thumb8.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+                            </article>
+                        </div>
+                        <!--/ Blog post #8 -->
+
+
+                        <!-- Blog post #9 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span> QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb9.jpg" data-src=".../image/thumb/industry/thumb9.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #9 -->
+
+                        <!-- Blog post #2 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <!-- Content -->
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign mr5"></span> 
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb10.jpg" data-src=".../image/thumb/industry/thumb10.jpg" alt="Photo" height="90px">
+
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+
+                            </article>
+                        </div>
+                        <!--/ Blog post #2 -->
+
+                        <!-- Blog post #11 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb11.jpg" data-src=".../image/thumb/industry/thumb11.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #11 -->
+
+                        <!-- Blog post #11 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb12.jpg" data-src=".../image/thumb/industry/thumb12.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #11 -->
+                    </div>
+                    <!--/ END Row -->
+
+                    <!-- START Row -->
+                    <div class="row" id="masonry">
+                        
+                        <!-- Blog post #1 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    PORTFOLIO MANAGEMENT
+                                                </h6> 
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb13.jpg" data-src="../image/thumb/industry/thumb13.jpg" alt="Photo" height="90px">
+                                        <!-- Content -->
+                                        
+                                    </div>
+                                    <!--/ media -->
+                                    
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #1 -->
+
+                        <!-- Blog post #10 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    FOREIGN CURRENCY
+                                                </h6> 
+                                                <h5 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h5>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb14.jpg" data-src="../image/thumb/industry/thumb14.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #10 -->
+
+
+                        <!-- Blog post #3 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    RISK MANAGEMENT
+                                                </h6> 
+                                                <h5 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h5>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb15.jpg" data-src="../image/thumb/industry/thumb15.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #3 -->
+
+                        <!-- Blog post #4 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    CAPITAL MARKETS
+                                                </h6> 
+                                                <h5 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h5>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb16.jpg" data-src=".../image/thumb/industry/thumb16.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #4 -->
+
+                        <!-- Blog post #5 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25 mb0">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5 mb0">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb17.jpg" data-src=".../image/thumb/industry/thumb17.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #5 -->
+
+                        <!-- Blog post #6 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span> 
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    How long does the CFA take to complete?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb18.jpg" data-src=".../image/thumb/industry/thumb18.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #6 -->
+
+
+                        <!-- Blog post #7 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb19.jpg" data-src=".../image/thumb/industry/thumb19.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+                            </article>
+                        </div>
+                        <!--/ Blog post #7 -->
+                        
+
+                         <!-- Blog post #8 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb20.jpg" data-src=".../image/thumb/industry/thumb20.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+                            </article>
+                        </div>
+                        <!--/ Blog post #8 -->
+
+
+                        <!-- Blog post #9 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span> QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb21.jpg" data-src=".../image/thumb/industry/thumb21.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #9 -->
+
+                        <!-- Blog post #2 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <!-- Content -->
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign mr5"></span> 
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb22.jpg" data-src=".../image/thumb/industry/thumb22.jpg" alt="Photo" height="90px">
+
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+
+                            </article>
+                        </div>
+                        <!--/ Blog post #2 -->
+
+                        <!-- Blog post #11 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                   </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb23.jpg" data-src=".../image/thumb/industry/thumb23.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #11 -->
+
+                        <!-- Blog post #11 -->
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 post np">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    </a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/industry/thumb24.jpg" data-src=".../image/thumb/industry/thumb24.jpg" alt="Photo" height="90px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #11 -->
+                    </div>
+                    <!--/ END Row -->
+                </div>
+            </section>
+            <!--/ END Blog Content -->
+
+
+           
+
+            <section id="learn-more" class="section pt60 pb60" style="z-index: -999999; background: url(http://nyulypgriot.files.wordpress.com/2013/11/black_blo_caro_page-bg_34059.jpg) center bottom; background-size: 150%; position: relative;">
+                <!-- pattern + overlay -->
+                <div class="overlay pattern pattern5"></div>
+                <div class="container pt60 pb60">
+                    <!--/ Header -->
+                    <h1 class="gf_droid text-center text-white"><u>5 Reasons</u> to consider the CFA Designation</h1>
+                 <h4 class="gf_droid text-center text-muted pb60">The <u>most respected</u> and recognized investment designation in the world</h4>
+                    <!-- START row -->
+                    <div class="table-layout pb60">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="table-layout animation" data-toggle="waypoints" data-showanim="fadeInRight" data-trigger-once="true">
+                                     <div class="col-xs-2 valign-top">
+                                        <div class="image-h thumb2 mini-thumb"></div>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <h4 class="font-alt text-primary">
+                                            <u>Reason #1</u>
+                                        </h4>
+                                        <h3 class="nm font-alt text-white">
+                                            <span class="ico-user7 text-white mr5"></span>
+                                            Be Distinguished
+                                        </h3>
+                                        <p class="text-muted mt10"> The CFA Program is organized into three levels, each culminating in a six-hour exam. The program curriculum progresses in complexity as you move through the three levels. Level I: Focuses on a basic knowledge of the ten topic areas and simple analysis using investment tools Level II: Emphasizes application of investment tools and concepts with a focus on valuation of all types of assets
+                    Level III: Focuses on synthesizing all of the concepts and analytical methods in a variety of applications for effective portfolio management and wealth planning</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="table-layout animation" data-toggle="waypoints" data-showanim="fadeInLeft" data-trigger-once="true">
+                                    <div class="col-xs-2 valign-top">
+                                        <div class="image-h thumb1 mini-thumb"></div>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <h4 class="font-alt text-primary">
+                                            <u>Reason #2</u>
+                                        </h4>
+                                        <h3 class="nm font-alt text-white">
+                                            <span class="ico-earth text-white mr5"></span>
+                                           Broaden Your Expertise
+                                        </h3>
+                                        <p class="text-muted mt10"> The CFA Program curriculum covers concepts and skills you will use at all stages of your career, bridging academic theory, current industry practice, and ethical and professional standards to provide a strong foundation of advanced investment analysis and real-world portfolio management skills.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="table-layout animation" data-toggle="waypoints" data-showanim="fadeInRight" data-trigger-once="true">
+                                   <div class="col-xs-2 valign-top">
+                                        <div class="image-h thumb4 mini-thumb"></div>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <h4 class="font-alt text-primary">
+                                            <u>Reason #3</u>
+                                        </h4>
+                                        <h3 class="nm font-alt text-white">
+                                             <span class="ico-bubbles3 text-white mr5"></span>
+                                             Narrow your Focus
+                                         </h3>
+                                        <p class="text-muted mt10">While most graduate school programs cover a broad range of topics, the CFA Program focuses specifically on investment knowledge. In addition, the self-study format allows you to continue working full time while you earn the charter.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="table-layout animation" data-toggle="waypoints" data-showanim="fadeInRight" data-trigger-once="true">
+                                    <div class="col-xs-2 valign-top">
+                                        <div class="image-h thumb3 mini-thumb"></div>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <h4 class="font-alt text-primary">
+                                            <u>Reason #4</u>
+                                        </h4>
+                                        <h3 class="nm font-alt text-white">
+                                            <span class="ico-checkbox text-white mr5"></span>
+                                            Work Anywhere
+                                        </h3>
+                                        <p class="text-muted mt10">Employers recognize the CFA charter as a reliable way to identify the most qualified job applicants. They know the CFA Program provides the skills needed to succeed and that earning the CFA charter demonstrates the commitment to excellence required of today’s investment professionals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-md-12 pt15 text-center animation" data-toggle="waypoints" data-showanim="flipInY" data-trigger-once="true" data-offset="40%">
+                            <img src="../image/mockup/window-frontend.png" style="width: 70%; margin-bottom: -210px;">
+                        </div>
+
+
+                       
+                    </div>
+                    <!--/ END row -->
+                </div>
+            </section>
+            <!--/ END Features Section -->
+
+            <!-- START Call To Action Section -->
+            <section class="section bgcolor-white cta_bs" style="border-top: 5px solid #fefefe; box-shadow: 1px 1px 1px #ccc; z-index: 999999; margin-bottom: 2px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h3 class="font-alt mt5">Interested in learning more about the CFA Designation?</h3>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="col-md-12">
+                                <a href="#faq" class="btn btn-primary btn-lg pull-right semibold">
+                                    <span class="ico-question4 mr5"></span>
+                                    Frequently Asked Questions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END Call To Action Section -->
+
+            <!-- START Featured Portfolio -->
+            <section id="members" class="section"  style="border-bottom: 10px solid #005580; position: relative; background: #08c;">
+                <div class="overlay pattern pattern13"></div>
+                <div class="container">
+                    
+                    <!-- Header -->
+                    <div class="section-header section-header-bordered mb15" style="z-index: 999999;">
+                        <h4 class="section-title">
+                            <p class="font-alt nm text-white">Our CFA Charterholding Members</p>
+                        </h4>
+                    </div>
+                    <!--/ Header -->
+                   
+                    <!-- START row -->
+                    <div class="row">
+						
+						<% @lawyers.sample(12).each do |user| %>
+                        <!-- Blog post #1 -->
+                        <div class="col-sm-2 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <div class="toolbar">
+                                                <a href="javascript:void(0);" class="btn btn-success"><i class="ico-new-tab"></i></a>
+                                            </div>
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/avatar/cordis.jpg" data-src="../image/avatar/cordis.jpg" alt="Photo" height="auto" width="100%">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                                <!-- Content -->
+                                <section class="panel-body text-center">
+                                    <!-- heading -->
+                                    <h6 class="font-alt mt0 mb0 "><a href="javascript:void(0);" class="text-default"><%= user.full_name_or_level %></a></h6>
+                                    <h6 class="h7 font-al nm ellipsis lh22">
+                                        <a href="javascript:void(0);" class="text-primary gf_muli">
+
+                                        <span class="ico ico-location4"></span> <%= user.user_detail.location_description %></a>
+
+                                    </h6>
+                                    <!--/ heading -->
+                                    <hr class="mt5 mb10"/>
+                                    <!-- meta -->
+                                    <p class="meta nm text-center">
+                                        <!-- <span class="text-muted mr5 ml5">&#8226;</span> -->
+										<% if user.linkedin.present? %>
+                                        <%= link_to image_tag("/image/social/linkedin_circle-128.png", height: "40"), user.linkedin %>
+										<% else %>
+										<img src="http://www.almaskorotana.co.uk/images/socmedlinkedin.png" height="40" alt=""/>
+										<% end %>
+                                            
+                                        
+                                    <% if user.email.present? %>
+									<%= link_to image_tag("/image/social/email_circle-128.png", height: "40"), user.email %>
+									<% else %>
+									<img src="/image/social/email_circle-128.png" height="40" alt=""/>
+									
+									<% end %>
+
+                                        <button class="btn btn-block btn-inverse btn-xs mt10">
+                                            <span class="ico-profile mr5"></span> Full Profile
+                                        </button>
+                                    </p>
+                                    <!--/ meta -->
+                                </section>
+                                <!--/ Content -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #1 -->
+						<% end %>
+
+    
+                    </div>
+                    <!--/ END row -->
+
+                </div>
+            </section>
+            <!--/ END Featured Portfolio -->
+
+
+
+            <section class="section pt60 pb60" style="background: url(http://i.huffpost.com/gen/1368538/thumbs/o-PROFESSIONAL-BUSINESS-WOMAN-facebook.jpg) center center; position: relative;">
+                <!-- pattern + overlay -->
+                <div class="overlay pattern pattern5"></div>
+                <div class="container pt40">
+                <!--/ Header -->
+
+                 <h1 class="gf_droid text-right text-white"><u>Join today</u> and Get Connected</h1>
+                 <h4 class="gf_droid text-right text-muted pb40">The <u>most respected</u> and recognized investment designation in the world</h4>
+
+
+                    <!-- START row -->
+                    <div class="table-layout">
+                        <div class="col-md-6 pt15 text-left animation" data-toggle="waypoints" data-showanim="flipInY" data-trigger-once="true" data-offset="40%">
+                            <img src="../image/mockup/iphone-5s.png" style="width: 55%; margin-bottom: -740px; margin-left: -40px;">
+                        </div>
+                         <div class="col-md-6">
+                            <div class="table-layout animation" data-toggle="waypoints" data-showanim="fadeInRight" data-trigger-once="true">
+                                <div class="col-xs-4 valign-top">
+                                    <div class="image-h thumb1"></div>
+                                </div>
+                                <div class="col-xs-8">
+
+                                    <h4 class="font-alt text-white">
+                                        <span class="ico-user7 text-white mr5"></span>
+                                        Create a Professional Profile
+                                    </h4>
+                                    <p class="nm text-muted">Create a professional profile and in minutes begin connecting with peers in our global community.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="table-layout animation" data-toggle="waypoints" data-showanim="fadeInRight" data-trigger-once="true">
+                                <div class="col-xs-4 valign-top">
+                                    <div class="image-h thumb2"></div>
+                                </div>
+                                <div class="col-xs-8">
+                                    <h4 class="font-alt text-white">
+                                        <span class="ico-earth text-white mr5"></span>
+                                        Explore Our Global Network
+                                    </h4>
+                                    <p class="nm text-muted">Connect with like-minded professionals around the globe that share your career aspirations and interest.</p>
+                                </div>
+                            </div>
+                             <div class="table-layout animation" data-toggle="waypoints" data-showanim="fadeInRight" data-trigger-once="true">
+                               <div class="col-xs-4 valign-top">
+                                    <div class="image-h thumb3"></div>
+                                </div>
+                                <div class="col-xs-8">
+                                    <h4 class="font-alt text-white">
+                                         <span class="ico-bubbles3 text-white mr5"></span>
+                                         Connect and Contribute
+                                     </h4>
+                                    <p class="nm text-muted">Join the conversation, or start one. Check out our community forums where members connect.</p>
+                                </div>
+                            </div>
+                            <div class="table-layout animation" data-toggle="waypoints" data-showanim="fadeInRight" data-trigger-once="true">
+                                <div class="col-xs-4 valign-top">
+                                    <div class="image-h thumb4"></div>
+                                </div>
+                                <div class="col-xs-8">
+                                    <h4 class="font-alt text-white">
+                                        <span class="ico-checkbox text-white mr5"></span>
+                                        Explore New Opportunities
+                                    </h4>
+                                    <p class="nm text-muted">We are actively seeking corporate partnerships and professional alliances to create job opportunities for our members.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ END row -->
+                </div>
+            </section>
+            <!--/ END Features Section -->
+
+
+            <!-- START Blog Content -->
+            <section id="faq" class="section bgcolor-white np" style="border-top: 10px solid #f5f5f5;">
+                <div class="container-fluid">
+                   <!-- START Row -->
+                    <div class="row" id="masonry">
+                        <!-- Blog post #0 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                        </div>
+                        <!--/ Blog post #0 -->
+
+                        <!-- Blog post #1 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign mr5"></span> 
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5 mb0">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    What topics does the course of study cover? Is there a focus?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <section class="mt0  panel-body pl25">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    The Candidate Body of Knowledge (CBOK)* represents the core knowledge, skills, and abilities that are generally accepted and applied by investment professionals throughout the world.For a complete list of topics covered please review the CBOK,
+                                                    <a href="http://www.cfainstitute.org/programs/cfaprogram/courseofstudy/Pages/cbok.aspx"><u>go here.</u></a>
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb5.jpg" data-src="../image/thumb/thumb5.jpg" alt="Photo" height="300px">
+                                        <!-- Content -->
+                                        
+                                    </div>
+                                    <!--/ media -->
+                                    
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #1 -->
+
+                        <!-- Blog post #10 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    How long does the CFA take to complete?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <section class="panel-body pl25">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    Successful candidates take an average of four years to complete the program.
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb38.jpg" data-src="../image/thumb/thumb38.jpg" alt="Photo" height="300px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #10 -->
+
+
+                        <!-- Blog post #3 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    How much does it cost on average to complete the course of study?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                             <section class="panel-body pl25">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    Exam registation fees range from US$ 700 to US$ 1,210 depending on how early or late you register. In addition, there is a one-time enrollment fee of US$ 450 for all new candidates. For more information, 
+                                                    <a href="http://www.cfainstitute.org/programs/cfaprogram/register/Pages/fee_schedule.aspx">
+                                                    <u>go here</u>.</a>
+
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb12.jpg" data-src="../image/thumb/thumb12.jpg" alt="Photo" height="300px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #3 -->
+
+                        <!-- Blog post #4 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    Can anyone do the CFA?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                             <section class="panel-body pl25">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    In order to successfully complete the CFA program candidates must complete the CFA Program Pledge to adhere to the CFA Institute Code of Ethics and Standards of Professional Conduct, have four years of qualified investment work experience, become a regular member of CFA Institute and apply for membership to a local CFA member society experience.
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb20.jpg" data-src="../image/thumb/thumb20.jpg" alt="Photo" height="300px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #4 -->
+
+                        <!-- Blog post #5 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25 mb0">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5 mb0">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    What is covered by the various levels of the CFA?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <section class="panel-body pl25 mt0">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary mt0">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    Level I: Focuses on a basic knowledge of the ten topic areas and simple analysis using investment tools. Level II: Emphasizes application of investment tools and concepts with a focus on valuation of all types of assets. Level III: Focuses on synthesizing all of the concepts and analytical methods in a variety of applications for effective portfolio management and wealth planning.
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb36.jpg" data-src="../image/thumb/thumb36.jpg" alt="Photo" height="300px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #5 -->
+
+                        <!-- Blog post #6 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span> 
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt mb0">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    Who usually seeks to attain the CFA designation?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <section class="panel-body pl25 mt0">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary mt0">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    The largest CFA Charterholding professions are Portfolio Management and Investment Research. For more information about the various professions and job functions that represent existing charterholders,
+                                                    <a href="http://www.cfainstitute.org/programs/cfaprogram/charter/professions/Pages/index.aspx"><u>go here.</u></a>
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb14.jpg" data-src="../image/thumb/thumb14.jpg" alt="Photo" height="300px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #6 -->
+
+
+                        <!-- Blog post #7 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    How difficult is the CFA, to complete?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                             <section class="panel-body pl25">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    The CFA designation is most respected for it's comprehensive course of study and examanation rigor. Perceivedifficulty will vary by candidate, however completion of the program is widely recognized as a major acheivement.
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb33.jpg" data-src="../image/thumb/thumb33.jpg" alt="Photo" height="300px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+                            </article>
+                        </div>
+                        <!--/ Blog post #7 -->
+                        
+
+                         <!-- Blog post #8 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    How do candidates prepare for the exam?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                             <section class="panel-body pl25">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    For each of the three exams, candidates typically plan on at least six months of preparation that includes study of materials provided by the CFA Institute and that of affiliated organizations that specilize in providing study materials for the CFA exams.
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb37.jpg" data-src="../image/thumb/thumb37.jpg" alt="Photo" height="300px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+                            </article>
+                        </div>
+                        <!--/ Blog post #8 -->
+
+
+                        <!-- Blog post #9 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span> QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    Do I have to be in finance to take the CFA?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                             <section class="panel-body pl25">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    Althought the program does not require a long-term commitment to the finance career path, successful completion of the program does requires four years of qualified investment work experience. 
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb34.jpg" data-src="../image/thumb/thumb34.jpg" alt="Photo" height="300px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #9 -->
+
+                        <!-- Blog post #2 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <!-- Content -->
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign mr5"></span> 
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5 mb0">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    How will the CFA strengthen my profile?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <section class="panel-body pl25 mt0">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    CFA® Program bridges current industry practice, investment theory, and ethical and professional standards to give you a strong foundation of advanced investment analysis and real-world portfolio management skills. The Chartered Financial Analyst® (CFA) credential has become the most respected and recognized investment designation in the world.
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb15.jpg" data-src="../image/thumb/thumb15.jpg" alt="Photo" height="300px">
+
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+
+
+                            </article>
+                        </div>
+                        <!--/ Blog post #2 -->
+
+
+
+
+
+                        <!-- Blog post #11 -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                            <article class="panel overflow-hidden">
+                                <!-- Thumbnail -->
+                                <header class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <!-- toolbar overlay -->
+                                        <div class="overlay">
+                                            <section class="panel-body pl25">
+                                                <!-- heading -->
+                                                <h6 class="h7 ls1 gf_lato inline text-warning">
+                                                    <span class="ico-question-sign"></span>
+                                                    QUESTION
+                                                </h6> 
+                                                <h4 class="font-alt mt5 mb0">
+                                                    <a href="javascript:void(0);" class="text-white">
+                                                    What is the pass rate for the various CFA exam levels?</a>
+                                                </h4>
+                                                <!--/ heading -->
+                                            </section>
+                                            <section class="panel-body pl25 mt0">
+                                                <h6 class="bold h7 ls1 gf_lato inline text-primary mt0">ANSWER</h6> 
+                                                <p class="muli mt5 text-muted">
+                                                    <u>June 2014 Exam Pass Rates</u><br/>
+                                                    Level I: 42%<br/>
+                                                    Level II: 46%<br/>
+                                                    Level III: 54%<br/><br/>
+                                                    <u>December 2013 Exam Pass Rate</u><br/>
+                                                    Level I: 43%
+                                                </p>
+                                                <!--/ heading -->
+                                            </section>
+                                           
+                                            <!--/ Content -->
+                                        </div>
+                                        <!--/ toolbar overlay -->
+                                        <img data-toggle="" src="../image/thumb/thumb25.jpg" data-src="../image/thumb/thumb25.jpg" alt="Photo" height="300px">
+                                    </div>
+                                    <!--/ media -->
+                                </header>
+                                <!--/ Thumbnail -->
+                            </article>
+                        </div>
+                        <!--/ Blog post #11 -->
+
+
+                    </div>
+                    <!--/ END Row -->
+                </div>
+            </section>
+            <!--/ END Blog Content -->
+
+            <!-- START To Top Scroller -->
+            <a href="#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
+            <!--/ END To Top Scroller -->
+        </section>
+        <!--/ END Template Main -->
+
+        
+
+
+        <!-- START Template Footer -->
+        <footer id="footer" role="contentinfo" style="border-top: 10px solid #222; border:">
+            
+            <!-- pattern + overlay -->
+            <!-- <div class="overlay pattern pattern0"></div> -->
+            <!--/ pattern + overlay -->
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row pb60 pt40">
+                    <!-- About -->
+                    <div class="col-md-8">
+                    </div>
+                    <!--/ About -->
+                    <div class="col-md-4">
+                        <h4 class="font-alt mt0">Join our Mailing List</h4>
+                        <form role="form">
+                            <div class="form-group">
+                                <p class="form-control-static">Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="newsletter_email" placeholder="Enter email">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Subscribe Now</button>
+                        </form>
+                    </div>
+                    <!--/ Newsletter -->
+                </div>
+                <!--/ row -->
+            </div>
+            <!--/ container -->
+
+            <!-- bottom footer -->
+            <div class="footer-bottom" style="position: absolute; bottom: 0; background: #222; padding: 30px 20px 20px; z-index: 99999; border: 1px solid #333;">
+                <!-- copyright -->
+               <div class="container" style="border-top: 5px solid #444; border-bottom: 1px solid #333; padding-top: 15px;">
+                    <div class="row">
+                        <div class="col-sm-8 gf_montserrat thin">
+                             <h5 class="text-muted thin gf_muli mt5 mb5">
+                                <span class="ico-share22 mr5 text-success"></span>
+                                <span class="mr5">Like Us.</span> 
+                                <span class="mr5">Share Us.<span class="mr5">
+                                Follow Us.
+                            </h5>
+                             <ul class="inline-li social_64 ml0 pl0 mt15">
+                                <li><img src="image/social/youtube_circle-128.png"/></li>
+                                <li><img src="image/social/twitter_circle-128.png"/></li>
+                                <li><img src="image/social/slideshare_circle-128.png"/></li>
+                                <li><img src="image/social/linkedin_circle-128.png"/></li>
+                                <li><img src="image/social/instagram_circle-128.png"/></li>
+                                <li><img src="image/social/facebook_circle-128.png"/></li>
+                            </ul>
+                            <!--/ copyright -->
+                        </div>
+                         <div class="col-sm-4 gf_montserrat text-right">
+                            <p class="text-muted bold mb5">BLACKCFA</p>
+                            <!-- copyright -->
+                            <ul class="unstyled gf_muli">
+                                <li>Our Team</li>
+                                <li>Partnerships</li>
+                                <li>Contact Us</li>
+                                <li>Terms and Policies</li>
+                                
+                            </ul>
+                            <!--/ copyright -->
+                        </div>
+                    </div>
+                </div>
+                <!--/ container -->
+            </div>
+            <!--/ bottom footer -->
+        </footer>
+        <!--/ END Template Footer -->
+
+        <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- Library script : mandatory -->
+        <script type="text/javascript" src="../library/jquery/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../library/jquery/js/jquery-migrate.min.js"></script>
+        <script type="text/javascript" src="../library/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../library/core/js/core.min.js"></script>
+        <!--/ Library script -->
+
+        <!-- App and page level script -->
+        <script type="text/javascript" src="../plugins/sparkline/js/jquery.sparkline.min.js"></script><!-- will be use globaly as a summary on sidebar menu -->
+        <script type="text/javascript" src="../javascript/app.min.js"></script>
+        
+        
+        <script type="text/javascript" src="../plugins/owl/js/owl.carousel.min.js"></script>
+        
+        <script type="text/javascript" src="../plugins/layerslider/js/greensock.min.js"></script>
+        
+        <script type="text/javascript" src="../plugins/layerslider/js/transitions.min.js"></script>
+        
+        <script type="text/javascript" src="../plugins/layerslider/js/layerslider.min.js"></script>
+        
+        <script type="text/javascript" src="../javascript/pages/frontend/home.js"></script>
+        
+        <!--/ App and page level scrip -->
+        <!--/ END JAVASCRIPT SECTION -->
+    </body>
+    <!--/ END Body -->
 </html>
