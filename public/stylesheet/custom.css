@@ -1,0 +1,721 @@
+/*! Adminre v.1.2.0 - custom.css
+ *
+ * @note : Avoid altering this file. Any enhancement should be done in this file
+ * @author : Khadijah Coakley
+ * @author URL : http://themeforest.net/user/pampersdry
+ */
+ 
+/* ----------------------------
+ *
+ * Your very own modification ;)
+
+ *
+ * --------------------------- */
+
+h1, h2 {font-family: 'Muli';}
+
+
+
+.npl {padding-left: 0 !important;}
+
+.white.pattern1 {
+	background-image: url("../image/pattern/blizzard.png");
+}
+
+.pattern.transparent  {opacity: 1}
+
+.bgcolor-primary.cta_bs {
+	box-shadow: 1px 1px 5px #ccc;
+	border-top: 3px solid #000;
+}
+
+
+.pattern.overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay.light {
+	background-color: rgba(0,0,0, .0);
+}
+
+.overlay.darker {
+	background-color: rgba(0,0,0, .70);
+}
+
+
+.frontend .section .section-header .section-title:after {
+	content: "";
+	position: absolute;
+	bottom: -16px;
+	left: 0;
+	width: 50px;
+	border-bottom: none;
+}
+
+.btn-primary.btn-3d {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #5bb75b;
+	background-image: -moz-linear-gradient(top, #91c854, #5e8a2c);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#91c854), to(#5e8a2c));
+	background-image: -webkit-linear-gradient(top, #91c854, #5e8a2c);
+	background-image: -o-linear-gradient(top, #91c854, #5e8a2c);
+	background-image: linear-gradient(to bottom, #91c854, #5e8a2c);
+	background-repeat: repeat-x;
+	border-color: #51a351 #51a351 #387038;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
+}
+
+.inline-block {display: inline-block !important;}
+.panel hr.dark {border-bottom: 1px solid #222; border-top: 1px solid #333;}
+.panel hr.darker {border-bottom: 1px solid #222; border-top: #333;}
+
+.bgcolor-transparent {background: transparent !important;}
+.no-border {border: none !important;}
+
+
+.pt30 {padding-top: 30px;}
+.pr30 {padding-right: 30px;}
+.pr40 {padding-right: 40px;}
+.pr50 {padding-right: 50px;}
+.pr60 {padding-right: 60px;}
+.pl30 {padding-left: 30px;}
+
+.text-twitter {color: #00aced;}
+.text-facebook {color: #3b5998;}
+.text-instagram {color: #517fa4;}
+
+
+
+.br-6 {border-radius: 6px;}
+.bs-888 {box-shadow: 1px 1px 1px #888; border-left: 1px solid #777; border-top: 1px solid #777;}
+
+.jumbotron h1.fs-xlrg {font-size: 60px !important;}
+
+.jumbotron.jumbotron-bg7 {
+	background: url("http://i.huffpost.com/gen/1410042/thumbs/o-AFRICANAMERICAN-COUPLE-WITH-FINANCIAL-PLANNER-facebook.jpg") no-repeat center top fixed;
+	min-height: 100%;
+}
+
+.jumbotron.jumbotron-bg2 {
+	background: url("http://infominer.infomine.com/files/2011/05/istock_000008330653medium.jpg") no-repeat center top fixed;
+}
+
+/*http://infominer.infomine.com/files/2011/05/istock_000008330653medium.jpg*/
+
+.jumbotron.jumbotron-bg1 {
+	background: url("http://mahfa.org/wp-content/uploads/2013/03/hd-header.jpg") no-repeat center top fixed;
+}
+
+
+
+.btn-outline {
+	background-color: transparent !important;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+	border-width: 2px !important;
+}
+
+.bd-dark-grey {
+	border-color: #aaa;
+}
+
+.fs14 {
+	font-size: 14px !important;
+}
+
+
+.frontend #header.navbar .navbar-header>.navbar-brand>.logo-figure,
+.backend #header.navbar .navbar-header>.navbar-brand>.logo-figure {
+	background-image: url(../image/logo/cfa-logo-inverse.jpg);
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.frontend #header.navbar .navbar-header > .navbar-brand > .logo-text,
+.backend #header.navbar .navbar-header > .navbar-brand > .logo-text {
+	background-image: url(../image/logo/logo-text.png);
+}
+
+article > section.panel-body h5 {
+	line-height: 1.6;
+}
+
+section h4 {
+	line-height: 1.3;
+}
+
+.frontend footer#footer {
+	position: relative;
+	background-color: #222;
+	padding-top: 25px;
+	color: #e6e6e6;
+}
+
+.frontend footer#footer > .footer-bottom {
+	background-color: #2b2b2b;
+	margin-top: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.frontend footer#footer {
+	position: relative;
+	background-color: #222;
+	padding-top: 25px;
+	color: #555;
+}
+
+.frontend footer#footer .legal a {
+	color: #555;
+	font-weight: 600;
+	font-size: 11px;
+}
+
+.frontend footer#footer p.copyright a {
+	color: #0092b6 !important;
+	margin: 0 2px;
+}
+
+.frontend footer#footer p.copyright {
+	font-weight: 600;
+	word-spacing: 1px;
+	font-size: 11px;
+}
+.frontend footer#footer h3,
+.frontend footer#footer h4,
+.frontend footer#footer h5 {
+	color: #666;
+}
+
+.jumbotron .table-layout p {
+	color: #aaa !important;
+}
+
+.pt60 {
+	padding-top: 60px;
+}
+
+.pt100 {
+	padding-top: 150px;
+}
+
+.pb60 {
+	padding-bottom: 60px;
+}
+
+.fsize13 { 
+	font-size: 13px;
+}
+
+.mr5 {
+	margin-right: 5px;
+}
+
+.jumbotron {
+	position: relative;
+	padding: 0;
+	background: url(http://www.primium.fi/images/finance1.jpg) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff!important;
+}
+
+.jumbotron.jumbotron-bg3 {
+	background: url("http://www.blackloveadvice.com/wp-content/uploads/2011/11/bigstock_Black_Business_Woman_Text_Mess_7014568.jpg") no-repeat center top fixed;
+}
+
+.jumbotron.jumbotron-bg6 {
+	background: url("http://www.worldpropertychannel.com/news-assets/Stock-Purchase.jpg") no-repeat center center;
+	background-size: 120%;
+}
+
+	
+.p20 {
+	padding: 15px 35px;
+}
+
+
+.table.light-border>tbody>tr>td {
+	border-color: #dde4e6;
+}
+
+table td > h5 {
+	line-height: 20px;
+}
+
+table td > h6 {
+	line-height: 16px;
+}
+
+.panel-toolbar-wrapper.transparent {
+	background-color: transparent;
+	border: none;
+}
+
+.table.border-bottom-thick {
+	border-bottom: 5px solid #f5f5f5;
+}
+
+.linkedin-blue {
+	background: #007bb6
+}
+
+.text-linkedin {
+	color: #007bb6
+}
+
+i.bg-white {background: #fff; padding: 5px; border-radius: 2px; border: 1px solid #eee; box-shadow: 1px 1px 1px #888;}
+
+.ws1 {word-spacing: 1px;}
+
+.pt0 {padding-top: 0 !important;}
+
+
+.page-header.page-header-block {
+	background-color: #fbfcfc;
+	border-bottom-color: transparent;
+	box-shadow: 1px 1px 1px #ccc;
+}
+
+
+.shuffle .panel {
+	position: relative;
+	border-width: 1px;
+	border-color: #cfd9db;
+	border-bottom-width: 1px;
+	border-radius: 3px;
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: 1px 1px 1px #bbb;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #bbb;
+}
+
+
+
+
+.addthis_button_twitter_follow_native.at300b {
+	max-width: 150px;
+}
+
+/************************ HEADER *****************/
+
+#header.navbar.navbar-fixed-top ~ #main {
+	padding-top: 60px;
+}
+
+#header.navbar.navbar-fixed-top {
+	z-index: 99999999999;
+}
+
+#header.navbar {
+	position: relative;
+	box-shadow: 1px 1px 1px #333;
+	z-index: 1030;
+	width: 100%;
+	background-color: #333;
+	border-width: 0px;
+	border-radius: 0px;
+	margin: 0px;
+	/*-webkit-box-shadow: 0px 3px 1px -3px rgba(0, 0, 0, 0.52);
+	box-shadow: 0px 3px 1px -3px rgba(0, 0, 0, 0.52);*/
+	-webkit-transition: -webkit-transform 0.2s ease;
+	-moz-transition: -moz-transform 0.2s ease;
+	-o-transition: -o-transform 0.2s ease;
+	transition: -webkit-transform 0.2s ease,-moz-transform 0.2s ease,-o-transform 0.2s ease,transform 0.2s ease;
+}
+
+#header.navbar {
+height: 60px;
+border: 0;
+}
+
+#header.navbar .navbar-header {
+	background-color: transparent;
+	height: 60px;
+	float: left;
+}
+
+#header.navbar .navbar-toolbar {
+position: relative;
+height: 65px;
+margin-left: 240px!important;
+}
+
+
+
+#header.navbar .navbar-toolbar .navbar-nav > li > a {
+padding: 0px 20px;
+height: 65px;
+line-height: 65px;
+text-shadow: none;
+}
+
+#header.navbar .navbar-toolbar .navbar-nav>li.active>a {
+	
+}
+
+#header.navbar .navbar-toolbar .navbar-nav>li >a {
+	color: #eee;
+	font-size: 18px;
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	letter-spacing: 0;
+}
+
+#header.navbar .navbar-toolbar .navbar-nav > li > a > .meta > .text {
+	color: #999;
+	font-size: 14px;
+	font-family: 'Muli';
+	letter-spacing: ;
+	line-height: 65px;
+}
+
+#header.navbar .navbar-toolbar .navbar-nav > li.profile > a > .meta > .text {
+	color: #00a5d2;
+	font-size: 13px;
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	letter-spacing: ;
+	line-height: 65px;
+}
+
+#header.navbar .navbar-toolbar .navbar-nav > li > a > .btn {
+	color: #888;
+	font-size: 12px;
+	font-family: 'Muli';
+	font-weight: 600;
+	word-spacing: -1px;
+
+}
+
+#header.navbar .navbar-toolbar .navbar-nav > li > a > .btn.btn-transparent {
+	border-width: 2px;
+	border-color: #666;
+	width: 90px;
+}
+
+#header.navbar .navbar-toolbar .navbar-nav > li:hover > a > .btn.btn-transparent {
+	color: #fff;
+	border-color: #08c;
+}
+
+li.bgcolor-black {background: #222;}
+li.dropdown.profile {margin-bottom: -3px;}
+#header.navbar .navbar-toolbar .navbar-nav>li>a:focus, 
+#header.navbar .navbar-toolbar .navbar-nav>li>a:hover,
+#header.navbar .navbar-toolbar .navbar-nav>li>a:active,
+#header.navbar .navbar-toolbar .navbar-nav>li.open>a,
+#header.navbar .navbar-toolbar .navbar-nav>li.open>a:focus, 
+#header.navbar .navbar-toolbar .navbar-nav>li.open>a:hover {
+background-color: #222;
+color: #919191;
+}
+
+#header.navbar .navbar-toolbar .navbar-nav>li.nh>a:focus, 
+#header.navbar .navbar-toolbar .navbar-nav>li.nh>a:hover,
+#header.navbar .navbar-toolbar .navbar-nav>li.nh>a:active,
+#header.navbar .navbar-toolbar .navbar-nav>li.nh.open>a,
+#header.navbar .navbar-toolbar .navbar-nav>li.nh.open>a:focus, 
+#header.navbar .navbar-toolbar .navbar-nav>li.nh.open>a:hover {
+background-color: transparent;
+}
+
+li.profile .avatar img {border: 2px solid #fff;}
+
+/************************ Google Fonts *****************/
+
+.gf_droid {font-family: 'Droid Serif';}
+.gf_montserrat {font-family: 'Montserrat';}
+.gf_oswald {font-family: 'oswald';}
+.gf_source_sans_pro {font-family: 'Source Sans Pro';}
+.gf_merriweather {font-family: 'Merriweather';}
+.gf_pt_sans {font-family: 'PT Sans';}
+.gf_muli {font-family: 'Muli';}
+.gf_lato {font-family: 'Lato';}
+
+.f_open_sans {font-family: "Open Sans", sans-serif;}
+
+.font-alt {font-family: 'Droid Serif';}}
+
+.fs10 {font-size: 10px;}
+
+.pob0 {margin-bottom: 0;}
+
+.lh-22 {line-height: 22px;}
+.mb20 {margin-bottom: 20px;}
+.mt20 {margin-top: 20px;}
+
+
+.h7 {font-size: 11px;}
+
+.ls1 {letter-spacing: 1px;}
+.lh22 {line-height: 22px;}
+
+/************************ Buttons *****************/
+
+
+.btn-transparent {background: transparent; border: 2px solid #888;}
+
+
+/************************ Positioning **************/
+.center {display: table; margin-right: auto; margin-left: auto;}
+
+.npr {padding-right: 0 !important;}
+
+.mt60 {margin-top: 60px !important;}
+.mb40 {margin-bottom: 40px !important;}
+.ml10 {margin-left: 10px !important;}
+.mt25 {margin-top: 25px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt50 {margin-top: 50px !important;}
+.mt60 {margin-top: 60px !important;}
+
+
+.pt10 {padding-top: 10px;}
+.pt20 {padding-top: 20px;}
+.pt30 {padding-top: 30px;}
+.pt40 {padding-top: 40px;}
+.pt50 {padding-top: 50px;}
+.pt60 {padding-top: 60px !important;}
+.pt80 {padding-top: 60px !important;}
+
+
+.pb10 {padding-bottom: 10px;}
+.pb20 {padding-bottom: 20px;}
+.pb30 {padding-bottom: 30px;}
+.pb40 {padding-bottom: 40px;}
+.pb60 {padding-bottom: 60px;}
+
+
+
+.pl25 {padding-left: 25px;}
+
+.bs_ccc {box-shadow: 1px 1px 1px #ccc;}
+
+/*style="border: 1px solid #252525; border-radius: 6px; background: rgba(0,0,0, .2);"*/
+
+ul.inline-li li {display: inline-block;}
+.inline {display: inline;}
+/************************ Form/Input Elements **************/
+
+.fileinput-preview.fileinput-exists.thumbnail {
+	
+}
+
+
+.fileinput-preview.fileinput-exists.thumbnail,
+.fileinput-new.thumbnail {
+	width: 100px;
+	height: 100px; 
+}
+
+.fileinput-preview.fileinput-exists.thumbnail img,
+.fileinput-new.thumbnail img {
+	width: 100%;
+	height: 100%; 
+}
+
+
+/************************ Slider **************/
+#layerslider {
+	background: url(http://nyulypgriot.files.wordpress.com/2013/11/black_blo_caro_page-bg_34059.jpg) left center  no-repeat;
+ 	background-size: 100%; }
+
+#footer {
+	height: 900px;
+	background: url(http://today.ucf.edu/files/2014/08/panels_w-screen_black.jpg) center bottom;
+	background-size: 100%;
+}
+
+
+
+/************************ Mini Thumbnails  **************/
+
+.owl-carousel .thumbnail > .media > img {
+	max-height: 126px;
+	overflow: hidden;
+}
+
+.owl-carousel .item .thumbnail {
+	border-radius: 3px 3px 0 0;
+	padding-bottom: 10px;
+	box-shadow: 1px 1px 1px #ccc;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+
+.owl-carousel .item .thumbnail img {border-radius: 3px 3px 0 0;}
+
+.owl-carousel .owl-item .item {
+	margin-bottom: 10px;
+} 
+
+.panel-body .text-muted {color: #bbb !important;}
+
+
+
+/************************ Mini Thumbnails  **************/
+
+.image-h {background: #fff; border: 3px solid #eee; padding: 2px; border-radius: 50%; width: 140px; height: 140px; overflow: hidden;}
+
+.image-h.mini-thumb {width: 65px; height: 65px; margin-top: 15px;}
+
+.image-h.thumb1 {
+	background: url(../image/thumb/thumb11.jpg) center center;
+	background-size: 150%;
+}
+
+.image-h.thumb2 {
+	background: url(../image/thumb/thumb9.jpg) center center;
+	background-size: 150%;
+}
+
+.image-h.thumb3 {
+	background: url(../image/thumb/thumb4.jpg) center center;
+	background-size: 150%;
+}
+
+.image-h.thumb4 {
+	background: url(../image/thumb/thumb12.jpg) center center;
+	background-size: 150%;
+}
+
+.table-layout.animation .text-muted {color: #bbb !important;}
+
+
+/************************ FAQ Icons  **************/
+
+#faq .thumbnail .media > .overlay {
+	border-radius: 0px;
+	bottom: 15px;
+	right: 15px;
+	background-color: rgba(0, 0,0, 0.35);
+	opacity: 1;
+	color: #ffffff;
+	-webkit-transition: opacity 0.2s ease;
+	-moz-transition: opacity 0.2s ease;
+	-o-transition: opacity 0.2s ease;
+	transition: opacity 0.2s ease;
+}
+
+
+
+#faq .thumbnail .media > .overlay section:nth-of-type(2) {
+	opacity: 0;
+}
+
+#faq .thumbnail:hover .media > .overlay section:nth-of-type(2) {
+	opacity: 1;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+	transition: opacity 0.4s ease;
+}
+
+
+
+#faq .thumbnail:hover .media > .overlay {
+	bottom: 15px;
+	right: 15px;
+	background-color: rgba(0, 0,0, 0.55);
+	opacity: 1;
+	color: #ffffff;
+	-webkit-transition: opacity 0.2s ease;
+	-moz-transition: opacity 0.2s ease;
+	-o-transition: opacity 0.2s ease;
+	transition: opacity 0.2s ease;
+}
+
+#masonry article.panel {border-radius: 0; margin: 0; border: 0; box-shadow: 1px 1px 1px #ccc;}
+#masonry .col-lg-4 {padding: 0;}
+#masonry .thumbnail {border-radius: 0;}
+#masonry .thumbnail img {width: 100%; overflow: hidden;}
+#masonry .thumbnail section.panel-body h4 a {color: #ddd;}
+
+
+/************************ Social Icons  **************/
+
+.social_64 img {height: 50px; width: 50px;}
+ul.unstyled li {list-style: none;}
+
+/************************ Members  **************/
+
+.members .panel {border: none; border-radius: 3px; box-shadow: 1px 1px 1px #666;}
+.members .thumbnail img
+.members .thumbnail .media,
+.members .thumbnail .overlay {border-radius: 3px;}
+
+.members .btn-inverse {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#7d7e7d), to(#0e0e0e));
+ 
+ background-image: -webkit-linear-gradient(top, #7d7e7d, #0e0e0e);
+ background-image: -moz-linear-gradient(top, #7d7e7d, #0e0e0e);
+ background-image: -ms-linear-gradient(top, #7d7e7d, #0e0e0e);
+ background-image: -o-linear-gradient(top, #7d7e7d, #0e0e0e);
+ background-image: linear-gradient(to bottom, #7d7e7d, #0e0e0e);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7d7e7d, endColorstr=#0e0e0e);
+
+}
+
+/************************ Members  **************/
+
+.owl-carousel .owl-item {width: 265px !important;}
+
+
+.col-ns div {padding: 0;}
+.col-ns div img {border: 3px 3px 0 0;}
+
+.col-ns .thumbnail {
+	padding-bottom: 5px; 
+	box-shadow: 1px 1px 1px #ccc; 
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0;
+}
+
+.col-ns .thumbnail > .media img{
+	/*max-height: 120px;*/
+	overflow: hidden;
+}
+
+.col-ns .thumbnail h6, .col-ns .thumbnail h5  {
+	font-family: 'Lato';
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #888;
+}
+
+.thumbnail .media > img {
+	position: relative;
+	z-index: 2;
+	border-radius: 0;
+	border: 0px;
+}
+
+/************************ Members  **************/
+
+/*Darkening page divider*/
+
+.nav-section>li>.section:after, .nav-section>li>a:after {
+	border-right: 1px solid #bbb;
+}
+
+
+/************************ Navar  **************/
+
+
+
+.panel.white .panel-body {background: #fff;}
+.p10 {padding: 10px !important;}
+
+
+
+
+
+
+
+
+
+

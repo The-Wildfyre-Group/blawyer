@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!-- 
+TEMPLATE NAME : Adminre backend
+VERSION : 1.2.0
+AUTHOR : JohnPozy
+AUTHOR URL : http://themeforest.net/user/JohnPozy
+EMAIL : pampersdry@gmail.com
+LAST UPDATE: 23/06/2014
+
+** A license must be purchased in order to legally use this template for your project **
+** PLEASE SUPPORT ME. YOUR SUPPORT ENSURE THE CONTINUITY OF THIS PROJECT **
+-->
+<html class="backend">
+    <!-- START Head -->
+    <head>
+        <!-- START META SECTION -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BlackCFA</title>
+        <meta name="author" content="pampersdry.info">
+        <meta name="description" content="Adminre is a clean and flat backend and frontend theme build with twitter bootstrap 3.1.1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../image/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../image/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../image/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../image/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../image/favicon.ico">
+        <!--/ END META SECTION -->
+
+        <!-- START STYLESHEETS -->
+        <!-- Plugins stylesheet : optional -->
+        
+        <link rel="stylesheet" href="plugins/magnific/css/magnific-popup.min.css">
+        <!--/ Plugins stylesheet -->
+
+        <!-- Application stylesheet : mandatory -->
+        <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheet/layout.min.css">
+        <link rel="stylesheet" href="stylesheet/uielement.min.css">
+        <link rel="stylesheet" href="stylesheet/custom.css">
+        <!--/ Application stylesheet -->
+        <!-- END STYLESHEETS -->
+
+        <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+        <script src="library/modernizr/js/modernizr.min.js"></script>
+        <!--/ END JAVASCRIPT SECTION -->
+    </head>
+    <!--/ END Head -->
+
+    <!-- START Body -->
+    <body>
+        <!-- START Template Header -->
+        <header id="header" class="navbar navbar-fixed-top">
+            <!-- START navbar header -->
+            <div class="navbar-header">
+                <!-- Brand -->
+                <a class="navbar-brand" href="/">
+                    <span class="logo-figure"></span>
+                    <span class="logo-text"></span>
+                </a>
+                <!--/ Brand -->
+            </div>
+            <!--/ END navbar header -->
+
+            <!-- START Toolbar -->
+            <div class="navbar-toolbar clearfix">
+                <!-- START Left nav -->
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- Directory Link  -->
+                    <li class="">
+                        <a href="directory.html">
+                            <span class="meta">
+                                <span class="icon">
+                                    <i class="ico-users mr5"></i> 
+                                    <small class="semibold">People Directory</small>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="user_profile.html">
+                            <span class="meta">
+                                <span class="icon">
+                                    <i class="ico-user mr5"></i> 
+                                    <small class="semibold">View Profile</small>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="edit-profile.html">
+                            <span class="meta">
+                                <span class="icon">
+                                    <i class="ico-edit mr5"></i> 
+                                    <small class="semibold">Edit Profile</small>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <!--/ Directory Link -->
+                </ul>
+                <!--/ END Left nav -->
+
+                <!-- START Right nav -->
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Profile dropdown -->
+                    <li class="dropdown profile">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="meta">
+                                <span class="avatar"><img src="https://media.licdn.com/media/p/2/000/0c3/146/0c64997.jpg" class="img-circle" alt="" /></span>
+                                <span class="text hidden-xs hidden-sm pl5">Cordis Stanfield</span>
+                                <span class="caret"></span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="pa15">
+                                <h5 class="semibold hidden-xs hidden-sm">
+                                    <p class="nm">60%</p>
+                                    <small class="text-muted">Profile complete</small>
+                                </h5>
+                                <h5 class="semibold hidden-md hidden-lg">
+                                    <p class="nm">Erich Reyes</p>
+                                    <small class="text-muted">60% Profile complete</small>
+                                </h5>
+                                <div class="progress progress-xs nm mt10">
+                                    <div class="progress-bar progress-bar-warning" style="width: 60%">
+                                        <span class="sr-only">60% Complete</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="user_profile.html"><span class="icon"><i class="ico-user-plus2"></i></span> My Profile</a></li>
+                            <li><a href="edit-profile.html"><span class="icon"><i class="ico-cog4"></i></span> Edit Profile</a></li>
+                            <li><a href="javascript:void(0);"><span class="icon"><i class="ico-question"></i></span> Help</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0);"><span class="icon"><i class="ico-exit"></i></span> Sign Out</a></li>
+                        </ul>
+                    </li>
+                    <!-- Profile dropdown -->
+                </ul>
+                <!--/ END Right nav -->
+            </div>
+            <!--/ END Toolbar -->
+        </header>
+        <!--/ END Template Header -->
+
+        <!-- START Template Main -->
+        <section id="main" role="main">
+            <!-- START jumbotron -->
+            <section class="jumbotron nm" data-stellar-background-ratio="0.4" style="min-height:320px;">
+                <!-- pattern + overlay -->
+                <div class="overlay pattern pattern10"></div>
+                <!--/ pattern + overlay -->
+            </section>
+            <!--/ END jumbotron -->
+
+
+
+            <!-- START Template Container -->
+            <div class="container">
+                
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- START Row -->
+                    <div class="row">
+                        <!-- Left Side / Top side -->
+                        <div class="col-md-8">
+                            <div class="widget panel">
+                                <!-- panel body -->
+                                <div class="panel-body p20">
+                                    <ul class="list-unstyled">
+                                        <li class="text-left">
+                                            <br/>
+                                            <h3 class="semibold mb0">Bio</h3>
+                                            <hr/>
+                                            <p>Xavier Capital Management, LLC is a registered investment adviser specializing in fixed income portfolios. The firm, headquartered in Largo, Maryland, was founded in 2006 with the goal of delivering attractive risk-adjusted returns to client portfolios by integrating the highest industry standards on a smaller, more flexible platform.</p>
+
+                                            <p>Xavier Capital is dedicated to providing clients with the highest level of service and building strong, value-added relationships over time. We market our products and services to various types of institutional clients including public funds, corporations, endowments and foundations, hospitals, religious organizations and Taft-Hartley plans. Xavier Capital is 100% employee owned.</p>
+                                        </li>
+                                    </ul>
+                                    
+                                    <br>
+
+                                    <!-- table -->
+                                    <table class="table border-bottom-thick">
+                                        <thead></thead>
+                                        <tbody>
+                                            <tr>
+                                                <td width="50%"><h5 class="bold">Alma Mater</h5></td>
+                                                <td>
+                                                    <h5 class="nm"><a href="#">Howard University</a></h5>
+                                                    <h5 class="nm"><a href="#">University of Tennessee</a></h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="50%"><h5 class="bold">Degree(s)</h5></td>
+                                                <td>
+                                                    <h5 class="nm"><a href="#">BBA, Finance</a></h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="50%"><h5 class="bold">CFA Holder Since</h5></td>
+                                                <td>
+                                                    <h5 class="nm"><a href="#">2012</a></h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="50%"><h5 class="bold">Certifications</h5></td>
+                                                <td>
+                                                    <h5 class="nm"><a href="#">CFRM</a></h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="50%"><h5 class="bold">Industries</h5></td>
+                                                <td>
+                                                    <h5 class="nm"><a href="#">Tech, Finance</a></h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="50%">
+                                                    <h5 class="bold">Skills</h5>
+                                                    <h6 class="text-muted pr15">Cordis has demonstrated professional experience in these areas.</h5>
+                                                </td>
+                                                <td>
+                                                    <h5 class="nm"><a href="#">Ruby on rails development, asset management, product development, web development, capital raising, risk management, compliance</a></h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="50%"><h5 class="bold">Interests</h5></td>
+                                                <td>
+                                                    <h5 class="nm"><a href="#">Finance, Real Estate, Running</a></h5>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--/ table -->
+
+                                    <div class="well well-minimal nm">
+                                        <!-- START Twitter Widget -->
+                                        <div class="panel-toolbar-wrapper transparent">
+                                            <div class="panel-toolbar">
+                                                <h4 class="semibold nm text-linkedin"><i class="bg-white ico-linkedin mr5"></i>LinkedIn</h4>
+                                            </div>
+                                            <div class="panel-toolbar text-right">
+                                                <a class="btn ws1 btn-primary bs-888 linkedin-blue" href="https://www.linkedin.com/profile/view?id=61383975&authType=NAME_SEARCH&authToken=ZG3w&locale=en_US&srchid=44154641404630328160&srchindex=1&srchtotal=1&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A44154641404630328160%2CVSRPtargetId%3A61383975%2CVSRPcmpt%3Aprimary" target="_blank">
+                                                    <h5 class="nm">View LinkedIn Profile</h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/ END Bio -->
+                                </div>
+                                <!--/ panel body -->
+                                <!-- panel ribbon -->
+                                <a href="javascript:void(0);" class="panel-ribbon panel-ribbon-primary"><i class="ico-info"></i></a>
+                                <!--/ panel ribbon -->
+                            </div>
+                        </div>
+                        <!--/ Right side / bottom side -->
+                        <div class="col-md-4">
+                            <div class="text-left">
+                                <img class="img-circle img-bordered" src="https://media.licdn.com/media/p/2/000/0c3/146/0c64997.jpg" alt="" style="margin-top: -100px; z-index: 999; position: relative;" width="180px" height="180px">
+                            </div>
+
+                            <!-- START Widget Panel -->
+
+                            <h3 class="text-left">Cordis M. Stanfield</h3>
+                            <h4 class="thin text-left">Co-Founder & Principal, Wildfyre</h4>
+                            <h5><i class="ico-map-marker mr5 text-teal"></i> Washington, DC</h5>
+                            <div class="pt15">
+                                <a href="javascript:void(0);" class="btn btn-primary">Connect</i></a>
+                                <a href="javascript:void(0);" class="btn btn-default">Send Message</i></a>
+                            </div>
+                        </div>
+                        <!--/ END Row -->
+                    </div>
+                </div>
+                <!-- START To Top Scroller -->
+                <a href="#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
+            </div><!--/ END Template Container -->
+            <!--/ END To Top Scroller -->
+
+        </section>
+            <!--/ END Template Main -->
+
+
+        <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- Library script : mandatory -->
+        <script type="text/javascript" src="library/jquery/js/jquery.min.js"></script>
+        <script type="text/javascript" src="library/jquery/js/jquery-migrate.min.js"></script>
+        <script type="text/javascript" src="library/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="library/core/js/core.min.js"></script>
+        <!--/ Library script -->
+
+        <!-- App and page level script -->
+        <script type="text/javascript" src="plugins/sparkline/js/jquery.sparkline.min.js"></script><!-- will be use globaly as a summary on sidebar menu -->
+        <script type="text/javascript" src="javascript/app.min.js"></script>
+        
+        
+        <script type="text/javascript" src="plugins/magnific/js/jquery.magnific-popup.min.js"></script>
+        
+        <script type="text/javascript" src="javascript/pages/timeline.js"></script>
+        
+        <!--/ App and page level script -->
+        <!--/ END JAVASCRIPT SECTION -->
+    </body>
+    <!--/ END Body -->
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<!-- 
+TEMPLATE NAME : Adminre backend
+VERSION : 1.2.0
+AUTHOR : JohnPozy
+AUTHOR URL : http://themeforest.net/user/JohnPozy
+EMAIL : pampersdry@gmail.com
+LAST UPDATE: 23/06/2014
+
+** A license must be purchased in order to legally use this template for your project **
+** PLEASE SUPPORT ME. YOUR SUPPORT ENSURE THE CONTINUITY OF THIS PROJECT **
+-->
+<html class="backend">
+    <!-- START Head -->
+    <head>
+        <!-- START META SECTION -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BlackCFA</title>
+        <meta name="author" content="pampersdry.info">
+        <meta name="description" content="Adminre is a clean and flat backend and frontend theme build with twitter bootstrap 3.1.1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../image/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../image/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../image/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../image/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="../image/favicon.ico">
+        <!--/ END META SECTION -->
+
+        <!-- START STYLESHEETS -->
+        <!-- Plugins stylesheet : optional -->
+        
+        
+        <!--/ Plugins stylesheet -->
+
+        <!-- Application stylesheet : mandatory -->
+        <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheet/layout.min.css">
+        <link rel="stylesheet" href="stylesheet/uielement.min.css">
+        <link rel="stylesheet" href="stylesheet/custom.css">
+        <!--/ Application stylesheet -->
+        <!-- END STYLESHEETS -->
+
+        <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+        <script src="../library/modernizr/js/modernizr.min.js"></script>
+        <!--/ END JAVASCRIPT SECTION -->
+    </head>
+    <!--/ END Head -->
+
+    <!-- START Body -->
+    <body>
+        <!-- START Template Header -->
+        <header id="header" class="navbar navbar-fixed-top">
+            <!-- START navbar header -->
+            <div class="navbar-header">
+                <!-- Brand -->
+                <a class="navbar-brand" href="/">
+                    <span class="logo-figure"></span>
+                    <span class="logo-text"></span>
+                </a>
+                <!--/ Brand -->
+            </div>
+            <!--/ END navbar header -->
+
+            <!-- START Toolbar -->
+            <div class="navbar-toolbar clearfix">
+                <!-- START Left nav -->
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- Directory Link  -->
+                    <li class="active">
+                        <a href="directory.html">
+                            <span class="meta">
+                                <span class="icon">
+                                    <i class="ico-users mr5"></i> 
+                                    <small class="semibold">People Directory</small>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="user_profile.html">
+                            <span class="meta">
+                                <span class="icon">
+                                    <i class="ico-user mr5"></i> 
+                                    <small class="semibold">View Profile</small>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="edit-profile.html">
+                            <span class="meta">
+                                <span class="icon">
+                                    <i class="ico-edit mr5"></i> 
+                                    <small class="semibold">Edit Profile</small>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <!--/ Directory Link -->
+                </ul>
+                <!--/ END Left nav -->
+
+                <!-- START Right nav -->
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Profile dropdown -->
+                    <li class="dropdown profile">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="meta">
+                                <span class="avatar"><img src="https://media.licdn.com/media/p/2/000/0c3/146/0c64997.jpg" class="img-circle" alt="" /></span>
+                                <span class="text hidden-xs hidden-sm pl5">Cordis Stanfield</span>
+                                <span class="caret"></span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="pa15">
+                                <h5 class="semibold hidden-xs hidden-sm">
+                                    <p class="nm">60%</p>
+                                    <small class="text-muted">Profile complete</small>
+                                </h5>
+                                <h5 class="semibold hidden-md hidden-lg">
+                                    <p class="nm">Erich Reyes</p>
+                                    <small class="text-muted">60% Profile complete</small>
+                                </h5>
+                                <div class="progress progress-xs nm mt10">
+                                    <div class="progress-bar progress-bar-warning" style="width: 60%">
+                                        <span class="sr-only">60% Complete</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="user_profile.html"><span class="icon"><i class="ico-user-plus2"></i></span> My Profile</a></li>
+                            <li><a href="edit-profile.html"><span class="icon"><i class="ico-cog4"></i></span> Edit Profile</a></li>
+                            <li><a href="javascript:void(0);"><span class="icon"><i class="ico-question"></i></span> Help</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:void(0);"><span class="icon"><i class="ico-exit"></i></span> Sign Out</a></li>
+                        </ul>
+                    </li>
+                    <!-- Profile dropdown -->
+                </ul>
+                <!--/ END Right nav -->
+            </div>
+            <!--/ END Toolbar -->
+        </header>
+        <!--/ END Template Header -->
+        
+         <section class="jumbotron jumbotron-bg3 nm" data-stellar-background-ratio="0.4" style="min-height:320px;">
+            <!-- pattern + overlay -->
+            <div class="overlay pattern pattern10"></div>
+            <!--/ pattern + overlay -->
+        </section>
+
+        <!-- START Template Main -->
+        <section id="main pt0" role="main">
+            <!-- START Template Container -->
+            <!-- Page Header -->
+            <div class="page-header page-header-block">
+                 <div class="page-header-section">
+                    <div class="toolbar">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="has-icon">
+                                <input type="search" class="form-control input-lg" name="shuffle-filter" id="shuffle-filter" placeholder="Search people by name">
+                                <i class="ico-search form-control-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header -->
+
+            <div class="container pt60">
+
+                <!-- START Row -->
+                <div class="row" id="shuffle-grid">
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar1.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="user_profile.html">Cordis Stanfield</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> libero.Integer@turpis.org</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Bahamas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                               <div class="col-xs-4 text-center"><img src="image/avatar/avatar2.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Lorenzo Newsome</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> urna@Suspendisseseddolor.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Austria</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar3.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Pamela Anderson</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> metus@vitaeorci.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Japan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar4.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Fulton Rojas</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> diam@Pellentesquehabitant.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Eritrea</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar5.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Linus Leonard</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> ante@nullaInteger.co.uk</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Singapore</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar6.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Orson Pierc</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> odio@mollis.net</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Syria</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar7.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Dane Gonzalez</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> lacus@imperdietnecleo.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> American Samoa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar8.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Maggie Vazquez</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> vestibulum@inlobortistellus.co.uk</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Libya</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar9.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Ina Odom</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> pede.nec@eget.org</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Bouvet Island</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar1.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="user_profile.html">Cordis Stanfield</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> libero.Integer@turpis.org</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Bahamas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                               <div class="col-xs-4 text-center"><img src="image/avatar/avatar2.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Lorenzo Newsome</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> urna@Suspendisseseddolor.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Austria</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar3.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Pamela Anderson</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> metus@vitaeorci.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Japan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar4.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Fulton Rojas</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> diam@Pellentesquehabitant.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Eritrea</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar5.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Linus Leonard</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> ante@nullaInteger.co.uk</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Singapore</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar6.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Orson Pierc</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> odio@mollis.net</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Syria</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar7.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Dane Gonzalez</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> lacus@imperdietnecleo.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> American Samoa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar8.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Maggie Vazquez</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> vestibulum@inlobortistellus.co.uk</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Libya</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar9.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Ina Odom</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> pede.nec@eget.org</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Bouvet Island</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar1.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="user_profile.html">Cordis Stanfield</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> libero.Integer@turpis.org</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Bahamas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                               <div class="col-xs-4 text-center"><img src="image/avatar/avatar2.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Lorenzo Newsome</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> urna@Suspendisseseddolor.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Austria</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar3.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Pamela Anderson</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> metus@vitaeorci.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Japan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar4.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Fulton Rojas</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> diam@Pellentesquehabitant.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Eritrea</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar5.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Linus Leonard</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> ante@nullaInteger.co.uk</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Singapore</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar6.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Orson Pierc</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> odio@mollis.net</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Syria</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar7.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Dane Gonzalez</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> lacus@imperdietnecleo.com</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> American Samoa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar8.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Maggie Vazquez</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> vestibulum@inlobortistellus.co.uk</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Libya</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 shuffle">
+                        <div class="panel widget">
+                            <div class="table-layout nm">
+                                <div class="col-xs-4 text-center"><img src="image/avatar/avatar9.jpg" width="100%"></div>
+                                <div class="col-xs-8 valign-middle">
+                                    <div class="panel-body">
+                                        <h5 class="semibold mt0 mb5"><a href="javascript:void(0);">Ina Odom</a></h5>
+                                        <p class="ellipsis text-muted mb5"><i class="ico-envelop mr5"></i> pede.nec@eget.org</p>
+                                        <p class="text-muted nm"><i class="ico-location2 mr5"></i> Bouvet Island</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ END Row -->
+            </div>
+            <!--/ END Template Container -->
+
+            <!-- START To Top Scroller -->
+            <a href="#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
+            <!--/ END To Top Scroller -->
+
+        </section>
+        <!--/ END Template Main -->
+
+        <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- Library script : mandatory -->
+        <script type="text/javascript" src="library/jquery/js/jquery.min.js"></script>
+        <script type="text/javascript" src="library/jquery/js/jquery-migrate.min.js"></script>
+        <script type="text/javascript" src="library/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="library/core/js/core.min.js"></script>
+        <!--/ Library script -->
+
+        <!-- App and page level script -->
+        <script type="text/javascript" src="plugins/sparkline/js/jquery.sparkline.min.js"></script><!-- will be use globaly as a summary on sidebar menu -->
+        <script type="text/javascript" src="javascript/app.min.js"></script>
+        
+        
+        <script type="text/javascript" src="plugins/shuffle/js/jquery.shuffle.min.js"></script>
+        
+        <script type="text/javascript" src="javascript/pages/people.js"></script>
+        
+        <!--/ App and page level script -->
+        <!--/ END JAVASCRIPT SECTION -->
+    </body>
+    <!--/ END Body -->
+</html>
