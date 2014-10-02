@@ -1,0 +1,204 @@
+<%= render 'shared/backend_head' %>
+
+<body>
+
+    <%= render 'shared/header_member' %>
+
+        <!-- START Template Main -->
+        <section id="main" role="main">
+
+            <%= render 'user_info_header'%>
+           
+            <section id="members" class="section" style="position: relative; background: #fff;">
+                <div class="overlay light pattern pattern13"></div>
+                <!-- START Template Container -->
+                <div class="container">
+                    <div class="col-md-10 col-md-offset-1">
+                        <!-- START Row -->
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="widget panel">
+                                    <!-- panel body -->
+                                    <div class="panel-body p20">
+                                        <ul class="list-unstyled">
+                                            <li class="text-left">
+                                                <br/>
+                                                <h3 class="semibold mb0">Bio</h3>
+                                                <hr/>
+                                                <p><%= raw nl2br(html_escape(@user.user_detail.try(:bio)))%></p>
+                                            </li>
+                                        </ul>
+
+                                        <br>
+
+                                        <!-- table -->
+                                        <table class="table border-bottom-thick">
+                                            <thead></thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td width="50%"><h5 class="bold">Degree(s)</h5></td>
+                                                    <td>
+                                                        <h5 class="nm"><a href="#"><%= @user.undergratuate_degree_and_major %></a></h5>
+                                                        <h5 class="nm"><a href="#"><%= @user.graduate_degree_and_major %></a></h5>
+                                                        <h5 class="nm"><a href="#"><%= @user.doctorate_degree_and_major %></a></h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="50%"><h5 class="bold">CFA Holder Since</h5></td>
+                                                    <td>
+                                                        <h5 class="nm"><a href="#"><%= @user.user_detail.try(:year_of_bar_exam) %></a></h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="50%"><h5 class="bold">Certifications</h5></td>
+                                                    <td>
+                                                        <h5 class="nm"><a href="#"><%= @user.user_detail.try(:certifications) %></a></h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="50%"><h5 class="bold">Industries</h5></td>
+                                                    <td>
+                                                        <h5 class="nm"><a href="#"><%= @user.user_detail.try(:industries) %></a></h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="50%">
+                                                        <h5 class="bold">Skills</h5>
+                                                        <h6 class="text-muted pr15"><%= @user.first_name_with_capital %> has demonstrated professional experience in these areas.</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5 class="nm"><a href="#"><%= @user.user_detail.try(:skills) %></a></h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="50%"><h5 class="bold">Interests</h5></td>
+                                                    <td>
+                                                        <h5 class="nm"><a href="#"><%= @user.user_detail.try(:interests) %></a></h5>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!--/ table -->
+										
+                                       <% unless @user.user_detail.linkedin.blank? %>
+	                                        <div class="well well-minimal nm">
+	                                            <!-- START Twitter Widget -->
+	                                            <div class="panel-toolbar-wrapper transparent">
+	                                                <div class="panel-toolbar">
+	                                                    <h4 class="semibold nm text-linkedin"><i class="bg-white ico-linkedin mr5"></i>LinkedIn</h4>
+	                                                </div>
+	                                                <div class="panel-toolbar text-right">
+	                                                    <a class="btn ws1 btn-primary linkedin-blue" href="<%= @user.linkedin %>" target="_blank">
+	                                                        <h5 class="nm">View LinkedIn Profile</h5>
+	                                                    </a>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+										<% end %>
+                                        <!--/ END Bio -->
+                                    </div>
+                                    <!--/ panel body -->
+                                    <!-- panel ribbon -->
+                                    <a href="javascript:void(0);" class="panel-ribbon panel-ribbon-primary"><i class="ico-info"></i></a>
+                                    <!--/ panel ribbon -->
+                                </div>
+                            </div>
+                            
+                            <!--/ Right side / bottom side -->
+                            <div class="col-md-3">
+                                <!-- START Widget Panel -->
+                                <div class="">
+                                    <!-- START panel -->
+                                    <div class="panel panel-primary">
+                                        <!-- panel heading/header -->
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Contact Information</h3>
+                                        </div>
+                                        <!--/ panel heading/header -->
+                                        <!-- panel body with collapse capabale -->
+                                        <div class="panel-collapse pull out">
+                                            <div class="panel-body pl25">
+                                                <!-- <address>
+                                                    <strong>Location</strong><br>
+                                                    <h4><i class="ico-map-marker mr5"></i> 
+                                                        <%= @user.user_detail.try(:location_description) %></h4>
+                                                </address> -->
+                                                <address>
+                                                    <strong>Phone and Email</strong><br>
+                                                    <abbr title="Phone">P:</abbr> 
+                                                    <%= number_to_phone(@user.user_detail.try(:phone_number), area_code: true) %><br>
+                                                    <%= mail_to @user.email do %>
+                                                    <abbr title="Email">E:</abbr> 
+                                                    <%= truncate @user.email, length: 20 %>
+                                                    <% end %>
+                                                </address>
+
+                                                <address>
+                                                    <strong>Website</strong><br>
+                                                    <%= link_to @user.user_detail.try(:website) do %>
+                                                    <a href="mailto:#"><%= @user.user_detail.try(:website) %></a>
+                                                    <% end %>
+                                                </address>
+                                                 
+												<% if @user.user_detail.social_media? %> 
+                                                <address>
+                                                    <strong>Social Media</strong><br>
+													<% unless @user.user_detail.try(:facebook).blank? %>
+		                                                <%= link_to @user.user_detail.try(:facebook) do %>
+		                                                    <h4>
+		                                                        <i class="text-facebook ico-facebook4 mr5"></i> 
+		                                                        Facebook
+		                                                    </h4>
+		                                                <% end %>
+													<% end %>
+													
+													<% unless @user.user_detail.try(:twitter).blank? %>
+	                                                    <%= link_to @user.user_detail.try(:twitter) do %>   
+	                                                        <h4>
+	                                                            <i class="text-twitter ico-twitter3 mr5"></i> Twitter
+	                                                        </h4>
+	                                                    <% end %>
+													<% end %>
+													
+													<% unless @user.user_detail.try(:instagram).blank? %>
+	                                                    <%= link_to @user.user_detail.try(:instagram) do %>
+	                                                        <h4>
+	                                                            <i class="text-instagram ico-instagram2 mr5"></i> Instagram
+	                                                        </h4>
+	                                                    <% end %>
+													<% end %>
+													<% unless @user.user_detail.try(:linkedin).blank? %>
+	                                                    <%= link_to @user.user_detail.try(:linkedin) do %>
+	                                                        <h4>
+	                                                            <i class="text-linkedin ico-linkedin2 mr5"></i> LinkedIn
+	                                                        </h4>
+	                                                    <% end %>
+													<% end %>
+                                                </address>
+												<% end %>
+                                            </div>
+                                        </div>
+                                    <!--/ panel body with collapse capabale -->
+                                    </div>
+                                <!--/ END panel -->
+                                </div>
+                            </div>
+                            <!--/ END Row -->
+                        </div>
+                    </div>
+                    <!-- START To Top Scroller -->
+                    <a href="#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
+                </div><!--/ END Template Container -->
+                <!--/ END To Top Scroller -->
+            </section>
+
+            <%= render 'footer'%>
+
+        </section>
+        <!--/ END Template Main -->
+        
+    <%= render "shared/js" %>
+
+    </body>
+    <!--/ END Body -->
+</html>
