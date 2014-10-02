@@ -65,7 +65,7 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
   
-  def charterholders
+  def lawyers
     @users = User.all
     @user = current_user
     @lawyers = User.where(level: "Lawyer")

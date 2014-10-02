@@ -1,4 +1,29 @@
 Rails.application.routes.draw do
+  root 'main#index'
+  
+  # users
+  resources :users do
+    # resources :user_profile_pictures
+  end
+  
+  resources :forums
+  resources :topics
+  resources :posts
+  
+  resources :sessions
+  get "login" => "sessions#new", as: :login
+  get "signup" => "users#new", as: :signup
+  get "home" => "users#index", as: :home
+  
+  get "lawyers" => "users#lawyers", as: :lawyers
+  
+  resources :password_resets, only: %w(new create edit update)
+  
+  # errors
+  get '/404', to: 'errors#not_found'
+  get '/422' => 'errors#server_error'
+  get '/500' => 'errors#server_error'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
